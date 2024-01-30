@@ -17,4 +17,25 @@ class BlogController < ApplicationController
 
     redirect_to "/"
   end
+
+  def update
+    @post = Post.find(params[:postId])
+
+    # post = Post.update
+    # post.title = params[:title]
+    # post.description = params[:description]
+    # post.save
+
+    # redirect_to "/"
+  end
+
+  def updateAction
+    @id = params[:id]
+    post = Post.find(@id)
+    post.title = params[:title]
+    post.description = params[:description]
+    post.save
+
+    redirect_to "/"
+  end
 end

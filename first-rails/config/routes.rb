@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   # root "posts#index"
   root :to => "blog#index"
   post "/create" => "blog#create"
+  get "/update/:postId" => "blog#update"
+  post "/updateAction" => "blog#updateAction"
 
   get "/home" => "blog#index"
   get "/test" => "blog#test"

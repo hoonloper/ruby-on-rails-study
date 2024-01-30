@@ -27,3 +27,15 @@ O
 app/views/calculator/result.erb,9/d/9d5459e168c0cf85272de14fec1f8b6e329d813e
 M
 app/views/calculator/plus.erb,3/d/3d1d58d3a7a86a5d98a0771dfdab0ecdacbf01ec
+C
+config/database.yml,2/c/2c912561029efc03ffae15b01b7337417d7a99bd
+B
+app/models/post.rb,d/9/d93c4f2b9b37fb2b9ad6808eea1494a6ec09b0c9
+Y
+)db/migrate/20240130101942_create_posts.rb,5/2/5214b9b24321d7018a61eed13b45f3d856aa63c5
+<
+db/schema.rb,2/c/2cda0c6171fa7d04989507a1dd112e34c40df46d
+;
+db/seeds.rb,8/1/816631bad3665c05f73dd7befe12c619677d6d62
+7
+Gemfile,d/e/de3150c01c3a946a6168173c4116741379fe3579

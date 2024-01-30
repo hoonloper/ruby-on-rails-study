@@ -4,10 +4,11 @@
 
 <div id="diaries">
   <% @diaries.each do |diary| %>
-    <%= render diary %>
-    <p>
-      <%= link_to "Show this diary", diary %>
-    </p>
+    <div>
+      <%= link_to(diary) do %>
+        <%= diary.title %>
+      <% end %>
+    </div>
   <% end %>
 </div>
 

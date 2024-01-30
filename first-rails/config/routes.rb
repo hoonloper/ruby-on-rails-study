@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'calculator/main'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
@@ -7,7 +8,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
-  root :to => "blog#index"
+  root :to => "calculator#main"
   get "/home" => "blog#index"
   get "/test" => "blog#test"
+  get "/result" => "calculator#result"
+  post "/result" => "calculator#result"
+  get "/plus/:num1/:num2" => "calculator#plus"
 end

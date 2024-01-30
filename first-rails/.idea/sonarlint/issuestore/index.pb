@@ -15,3 +15,15 @@ H
 app/views/blog/index.erb,f/f/ff17095c3f0efc29b47cd85b469e0f2f0998b9b3
 G
 app/views/blog/test.erb,1/0/10289540aec4f1ecbe767e7a9c9c3cf7ab961b00
+Y
+)app/controllers/application_controller.rb,7/d/7dc0dd94f601e507e2a20bad6adcf12a51caa380
+X
+(app/controllers/calculator_controller.rb,e/4/e44711b98f809e3539a6f4cc22c7029e7da5969f
+R
+"app/views/calculator/main.html.erb,6/0/60d8593e65281570871f5f35be46d1d164c44aa5
+M
+app/views/calculator/main.erb,f/1/f12be0bb964895ccde4ad84f33b9459ecd8b0b60
+O
+app/views/calculator/result.erb,9/d/9d5459e168c0cf85272de14fec1f8b6e329d813e
+M
+app/views/calculator/plus.erb,3/d/3d1d58d3a7a86a5d98a0771dfdab0ecdacbf01ec

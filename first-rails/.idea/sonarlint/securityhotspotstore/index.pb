@@ -41,3 +41,5 @@ Y
 Gemfile,d/e/de3150c01c3a946a6168173c4116741379fe3579
 I
 app/views/blog/update.erb,9/6/9695653d70435499980f43469646e5e31a64a12e
+U
+%app/controllers/diaries_controller.rb,2/2/22f9b2d4db02e718235ab82991fc980b55018f01

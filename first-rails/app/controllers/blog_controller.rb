@@ -3,6 +3,7 @@ class BlogController < ApplicationController
   end
 
   def test
+    @condition = false
     @temp = "안녕하세요!"
   end
 end

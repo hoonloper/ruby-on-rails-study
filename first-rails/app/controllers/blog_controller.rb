@@ -3,6 +3,6 @@ class BlogController < ApplicationController
   end
 
   def test
-
+    @temp = "안녕하세요!"
   end
 end

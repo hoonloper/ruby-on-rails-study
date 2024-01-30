@@ -29,6 +29,12 @@ class BlogController < ApplicationController
     # redirect_to "/"
   end
 
+  def delete
+    Post.destroy(params[:postId])
+
+    redirect_to "/"
+  end
+
   def updateAction
     @id = params[:id]
     post = Post.find(@id)

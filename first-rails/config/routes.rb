@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   root :to => "blog#index"
   post "/create" => "blog#create"
   get "/update/:postId" => "blog#update"
+  get "/delete/:postId" => "blog#delete"
   post "/updateAction" => "blog#updateAction"
 
   get "/home" => "blog#index"

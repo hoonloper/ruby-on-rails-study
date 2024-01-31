@@ -15,3 +15,7 @@ Y
 )db/migrate/20240131110835_create_posts.rb,0/5/054ed0bee3cfd3668764ce4fd9f5955a89d7e291
 <
 db/schema.rb,2/c/2cda0c6171fa7d04989507a1dd112e34c40df46d
+I
+app/views/home/modify.erb,b/e/be2b541578344de68f415448eed317742ddf30e0
+G
+test/fixtures/posts.yml,9/3/937aaa33a4181be72dd4b8c9cae7f4e67e1243ef

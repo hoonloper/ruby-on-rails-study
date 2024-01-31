@@ -19,8 +19,6 @@ Y
 )app/controllers/application_controller.rb,7/d/7dc0dd94f601e507e2a20bad6adcf12a51caa380
 X
 (app/controllers/calculator_controller.rb,e/4/e44711b98f809e3539a6f4cc22c7029e7da5969f
-R
-"app/views/calculator/main.html.erb,6/0/60d8593e65281570871f5f35be46d1d164c44aa5
 M
 app/views/calculator/main.erb,f/1/f12be0bb964895ccde4ad84f33b9459ecd8b0b60
 O

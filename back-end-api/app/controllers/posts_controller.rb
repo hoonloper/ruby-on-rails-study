@@ -4,9 +4,9 @@ class PostsController < ApplicationController
   end
 
   def show
-    post = Post.find(params[:id])
+    post = Post.left_joins(:user).find(params[:id])
 
-    render json: post.to_json, status: :ok
+    render json: post.as_json, status: :ok
   end
 
   def update

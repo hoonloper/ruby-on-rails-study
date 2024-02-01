@@ -24,7 +24,8 @@
     <tr>
       <td><%= todo.title %></td>
       <td><%= todo.content %></td>
-      <td><a href="/detail/<%= todo.id %>">상세보기</a></td>
+      <td><a href="/detail/<%= todo.id %>">상세</a></td>
+      <td><a href="/edit/<%= todo.id %>">수정</a></td>
 <!--      <td><%#= link_to "수정", edit(todo) %></td>-->
 <!--      <td><%#= link_to "삭제", todo, data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %></td>-->
     </tr>

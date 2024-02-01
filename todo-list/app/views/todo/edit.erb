@@ -1,0 +1,7 @@
+<form action="/edit/<%= @todo.id %>" method="patch">
+  제목: <input type="text" name="title" value="<%= @todo.title %>"/>
+  <br />
+  내용: <input type="text" name="content" value="<%= @todo.content %>"/>
+  <br />
+  <a href="/index">홈으로</a> <button type="submit">수정</button>
+</form>

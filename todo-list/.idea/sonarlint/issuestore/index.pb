@@ -33,3 +33,5 @@ F
 app/views/todo/new.erb,9/6/96db8303da8f458b6b9dcf34d417de52fcfa8214
 I
 app/views/todo/detail.erb,2/c/2c2bafecfa68f3e155231dd9ed30d4771f84893e
+G
+app/views/todo/edit.erb,8/2/823d13258bf05fe1bb34eb6afb7caee26a24537e

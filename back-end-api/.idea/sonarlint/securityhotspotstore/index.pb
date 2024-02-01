@@ -13,3 +13,5 @@ S
 #app/controllers/posts_controller.rb,f/9/f996b5876ce8e20a89628ca920dc56b60c229b09
 Y
 )app/controllers/application_controller.rb,7/d/7dc0dd94f601e507e2a20bad6adcf12a51caa380
+Y
+)db/migrate/20240201114658_create_users.rb,4/3/438513204364f7f584247c35db259200b5081084

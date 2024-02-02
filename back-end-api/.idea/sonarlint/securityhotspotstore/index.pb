@@ -15,3 +15,5 @@ Y
 )app/controllers/application_controller.rb,7/d/7dc0dd94f601e507e2a20bad6adcf12a51caa380
 Y
 )db/migrate/20240201114658_create_users.rb,4/3/438513204364f7f584247c35db259200b5081084
+Y
+)db/migrate/20240201114643_create_posts.rb,b/c/bc964903c5e3d028bc444ce0049b1b9d63765ce3

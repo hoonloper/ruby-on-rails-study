@@ -5,13 +5,11 @@ class PostsController < ApplicationController
 
   def show
     post = Post.left_joins(:user).find(params[:id])
-
     render json: post.as_json, status: :ok
   end
 
   def update
     post = Post.find(params[:id])
-
     if post.update(post_params)
       render json: post.to_json, status: :accepted
     else
@@ -22,7 +20,6 @@ class PostsController < ApplicationController
     post = Post.new(post_params)
     post.user = default_user
     post.save! # save vs save!(rails Exception)
-
     render json: post.to_json, status: :created
   end
 

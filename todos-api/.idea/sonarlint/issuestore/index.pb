@@ -73,3 +73,15 @@ M
 app/auth/authenticate_user.rb,5/d/5d9ead475941f768e7c25ab5e5260b9bc7cab866
 S
 #spec/auth/authenticate_user_spec.rb,8/1/817c81b2420b555bf2bdfb3f55e70c74d6559a5a
+T
+$spec/requests/authentication_spec.rb,d/3/d33a3aea5a8a48fe181aa9923deda10e753b5788
+\
+,app/controllers/authentication_controller.rb,b/f/bf9066b4df87dd643d9b663ae71dcc0ab1f38cae
+K
+spec/requests/users_spec.rb,c/9/c994bd6795de9a5491fcd60b938911416cac529a
+S
+#app/controllers/users_controller.rb,2/8/28f48e0bc2718ddf87752d15b58a0016c13baf1c
+^
+.spec/controller/application_controller_spec.rb,b/0/b043bec5849a0872493ca1f1721b5851f43764b3
+_
+/spec/controllers/application_controller_spec.rb,3/7/37f3957b4507ee965613e311176216b39beecbd8

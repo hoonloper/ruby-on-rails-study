@@ -39,3 +39,13 @@ $app/controllers/concerns/response.rb,8/c/8c9101fdda71873fa640e69e8c159d2d9ba7c
 -app/controllers/concerns/exception_handler.rb,2/1/2180b3618a8c3b9c02074b9bc39cb8af2c19086a
 Y
 )app/controllers/application_controller.rb,7/d/7dc0dd94f601e507e2a20bad6adcf12a51caa380
+Y
+)spec/controllers/items_controller_spec.rb,4/e/4e97e0a8e644d3c30a9d5c9f258f34126660a2f6
+S
+#app/controllers/items_controller.rb,a/9/a900d7397d136f08e2003a44e645f57915c135c7
+<
+Gemfile.lock,2/1/21fb5836b499a2be648386aac055d2e069160d6c
+K
+spec/requests/todos_spec.rb,7/4/74eb4f0be9b79ed05c257d528db86b3654db780c
+K
+spec/requests/items_spec.rb,6/f/6f4aa30c5ee7956aaa2a9add188a731d58e5ef95

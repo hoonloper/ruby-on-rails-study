@@ -75,6 +75,7 @@ Shoulda::Matchers.configure do |config|
   end
 end
 
+# test db transaction 관련
 RSpec.configure do |config|
   config.include FactoryBot::Syntax::Methods
 
@@ -90,12 +91,13 @@ RSpec.configure do |config|
   end
 end
 
-
+# support 등록
 # [...]
 Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
 # [...]
 RSpec.configuration do |config|
   # [...]
   config.include RequestSpecHelper, type: :request
+  config.include ControllerSpecHelper # jwt 토큰 인증 관련
   # [...]
 end

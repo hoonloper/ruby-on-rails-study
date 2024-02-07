@@ -71,3 +71,5 @@ N
 spec/auth/authenticate_user.rb,f/7/f7011eb2518dbc0db50782867b793ef2203bf182
 M
 app/auth/authenticate_user.rb,5/d/5d9ead475941f768e7c25ab5e5260b9bc7cab866
+S
+#spec/auth/authenticate_user_spec.rb,8/1/817c81b2420b555bf2bdfb3f55e70c74d6559a5a

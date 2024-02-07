@@ -19,3 +19,23 @@ B
 app/models/item.rb,e/f/ef7c7989e344203cf602582f578f0162debca6c1
 <
 db/schema.rb,2/c/2cda0c6171fa7d04989507a1dd112e34c40df46d
+F
+spec/factories/todo.rb,7/b/7b9417093bbd3217b640e2bf615a543f19f8d688
+G
+spec/factories/todos.rb,2/5/255a209839a2926be6c58f57f5f798e49e5b8c33
+G
+spec/factories/items.rb,1/6/16ae076d013ecf037f224a851887ae6ffc60417a
+Y
+)spec/controllers/todos_controller_spec.rb,8/e/8e90ac6ccf632d50dbcaf695eae7d2a05c5414dc
+S
+#spec/support/request_spec_helper.rb,2/8/289c1186158c1ef9f170b3604b588f05d345928a
+@
+config/routes.rb,e/8/e801163eb9182955dca3eb9817d59af634f6665d
+S
+#app/controllers/todos_controller.rb,9/0/9028e3a75cab44c3e953e41433a49b7f3b31484c
+T
+$app/controllers/concerns/response.rb,8/c/8c9101fdda71873fa640e69e8c159d2d9ba7ceca
+]
+-app/controllers/concerns/exception_handler.rb,2/1/2180b3618a8c3b9c02074b9bc39cb8af2c19086a
+Y
+)app/controllers/application_controller.rb,7/d/7dc0dd94f601e507e2a20bad6adcf12a51caa380

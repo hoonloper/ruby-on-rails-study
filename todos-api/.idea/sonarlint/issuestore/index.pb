@@ -93,3 +93,5 @@ V
 &app/controllers/v1/items_controller.rb,1/9/19d7b167d046b5474902f73ad0c537f6a52d3f12
 V
 &app/controllers/v2/todos_controller.rb,c/f/cf663efccb48b43f90d06a1fc30a0320b4e21ae6
+R
+"app/serializers/todo_serializer.rb,3/1/316983748abbc5577c38e160721fd2dee0eee269

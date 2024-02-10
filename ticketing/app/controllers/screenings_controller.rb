@@ -12,7 +12,7 @@ class ScreeningsController < ApplicationController
   end
 
   def create
-    screening = Screening.new(movie_params)
+    screening = Screening.new(screening_params)
     screening.save!
 
     render json: screening.to_json, status: :created
@@ -25,7 +25,7 @@ class ScreeningsController < ApplicationController
   end
 
   private
-  def movie_params
-    params.require(:screening).permit(:title, :director)
+  def screening_params
+    params.require(:screening).permit(:show_date, :start_time, :end_time)
   end
 end

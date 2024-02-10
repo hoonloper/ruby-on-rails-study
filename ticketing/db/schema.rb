@@ -22,8 +22,12 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_10_103656) do
     t.date "show_date"
     t.date "start_time"
     t.date "end_time"
+    t.integer "movie_id", null: false
+    t.integer "theater_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["movie_id"], name: "index_screenings_on_movie_id"
+    t.index ["theater_id"], name: "index_screenings_on_theater_id"
   end
 
   create_table "theaters", force: :cascade do |t|
@@ -32,4 +36,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_10_103656) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "screenings", "movies"
+  add_foreign_key "screenings", "theaters"
 end

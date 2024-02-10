@@ -15,3 +15,13 @@ Z
 .db/migrate/20240210103605_create_screenings.rb,2/0/20d599a5f29d7c1931b7aa545f301f06ccb67cda
 \
 ,db/migrate/20240210103656_create_theaters.rb,4/9/4919fac27a3049af5282e575d8771b64cd4d9d96
+7
+Gemfile,d/e/de3150c01c3a946a6168173c4116741379fe3579
+C
+spec/spec_helper.rb,6/0/60fdfdbae843d7e48fd48bfe0f581e60b714bd8c
+D
+spec/rails_helper.rb,e/6/e611dbc5471fd027e0d4ee00331c484a11d083df
+I
+spec/models/movie_spec.rb,2/7/270a7de7568c2c01c00bf7364dc0e60942774a7e
+<
+db/schema.rb,2/c/2cda0c6171fa7d04989507a1dd112e34c40df46d

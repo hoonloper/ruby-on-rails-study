@@ -4,6 +4,8 @@ class CreateScreenings < ActiveRecord::Migration[7.1]
       t.date :show_date
       t.date :start_time
       t.date :end_time
+      t.references :movie, null: false, foreign_key: true
+      t.references :theater, null: false, foreign_key: true
 
       t.timestamps
     end

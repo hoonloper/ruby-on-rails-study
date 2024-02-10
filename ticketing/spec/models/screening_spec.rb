@@ -5,6 +5,7 @@ RSpec.describe Screening, type: :model do
   # ensure Todo model has a 1:m relationship with the Item model
   it { should belong_to(:movie) }
   it { should belong_to(:theater) }
+  it { should have_many(:tickets) }
 
   # Validation tests
   # ensure columns title and created_by are present before saving

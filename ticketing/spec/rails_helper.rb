@@ -97,7 +97,7 @@ end
 # # [...]
 # RSpec.configuration do |config|
 #   # [...]
-#   config.include RequestSpecHelper, type: :request
+#   config.include request_spec_helper.rb, type: :request
 #   config.include ControllerSpecHelper # jwt 토큰 인증 관련
 #   # [...]
 # end

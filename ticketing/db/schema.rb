@@ -32,6 +32,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_10_103656) do
 
   create_table "theaters", force: :cascade do |t|
     t.string "name"
+    t.integer "max_audience_count"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

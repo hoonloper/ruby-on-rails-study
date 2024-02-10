@@ -12,7 +12,7 @@ class TheatersController < ApplicationController
   end
 
   def create
-    theater = Theater.new(movie_params)
+    theater = Theater.new(theater_params)
     theater.save!
 
     render json: theater.to_json, status: :created
@@ -25,7 +25,7 @@ class TheatersController < ApplicationController
   end
 
   private
-  def movie_params
-    params.require(:theater).permit(:title, :director)
+  def theater_params
+    params.require(:theater).permit(:name, :max_audience_count)
   end
 end

@@ -12,6 +12,11 @@ class TicketsController < ApplicationController
   end
 
   def create
+    already_ticket = Ticket.find_by(username: ticket_params[:username], screening_id: ticket_params[:screening_id])
+    if already_ticket
+      return json_response({ message: "이미 등록한 티켓입니다."}, :bad_request)
+    end
+
     ticket_count_by_screening = Ticket.where(screening_id: ticket_params[:screening_id]).count
     screening = Screening.left_joins(:theater).find(ticket_params[:screening_id])
 

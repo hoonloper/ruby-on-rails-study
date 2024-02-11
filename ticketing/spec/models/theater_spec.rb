@@ -8,4 +8,5 @@ RSpec.describe Theater, type: :model do
   # Validation tests
   # ensure columns title and created_by are present before saving
   it { should validate_presence_of(:name) }
+  it { should validate_presence_of(:max_audience_count) }
 end

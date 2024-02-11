@@ -98,6 +98,6 @@ Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
 RSpec.configuration do |config|
   # [...]
   config.include request_spec_helper.rb, type: :request
-  # config.include ControllerSpecHelper # jwt 토큰 인증 관련
+  config.include ControllerSpecHelper # jwt 토큰 인증 관련
   # [...]
 end

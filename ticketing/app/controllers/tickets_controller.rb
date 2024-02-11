@@ -1,31 +1,34 @@
 class TicketsController < ApplicationController
+  before_action :set_ticket, only: [:show, :destroy]
+
   def index
     @tickets = Ticket.all
 
-    render json: @tickets.as_json, status: :ok
+    json_response(@tickets)
   end
 
   def show
-    ticket = Ticket.find(params[:id])
-
-    render json: ticket.as_json, status: :ok
+    json_response(@ticket)
   end
 
   def create
     ticket = Ticket.new(ticket_params)
     ticket.save!
 
-    render json: ticket.to_json, status: :created
+    json_response(ticket, :created)
   end
 
   def destroy
-    Ticket.destroy(params[:id])
+    @ticket.destroy
 
-    render status: :no_content
+    head :no_content
   end
 
   private
   def ticket_params
     params.require(:ticket).permit(:username, :screening_id)
+  end
+  def set_ticket
+    @ticket = Ticket.find(params[:id])
   end
 end

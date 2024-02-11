@@ -1,5 +1,5 @@
 class Ticket < ApplicationRecord
   belongs_to :screening
 
-  validates :username, uniqueness: true
+  validates_uniqueness_of :username
 end

@@ -1,21 +1,26 @@
 class TheatersController < ApplicationController
+  before_action :set_theater, only: [:show, :update, :destroy]
   def index
     @theaters = Theater.all
 
-    render json: @theaters.as_json, status: :ok
+    json_response(@theaters)
   end
 
   def show
-    theater = Theater.find(params[:id])
-
-    render json: theater.as_json, status: :ok
+    json_response(@theater)
   end
 
   def create
     theater = Theater.new(theater_params)
     theater.save!
 
-    render json: theater.to_json, status: :created
+    json_response(theater, :created)
+  end
+
+  def update
+    @theater.update(theater_params)
+
+    head :no_content
   end
 
   def destroy
@@ -27,5 +32,8 @@ class TheatersController < ApplicationController
   private
   def theater_params
     params.require(:theater).permit(:name, :max_audience_count)
+  end
+  def set_theater
+    @theater = Theater.find(params[:id])
   end
 end

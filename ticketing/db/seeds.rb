@@ -12,7 +12,7 @@ require 'faker'
 
 50.times do
   # 극장 생성
-  theater = Theater.create(name: Faker::Name.name, max_audience_count: Faker::Number.number(digits: 1))
+  theater = Theater.create(name: Faker::Name.name, max_audience_count: Faker::Number.number(digits: 2))
 
   # 영화 생성
   movie = Movie.create(title: Faker::Lorem.word, director: Faker::Name.name)

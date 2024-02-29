@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe "Items", type: :request do
-  # Initialize the test data
   let(:user) { create(:user) }
   let!(:todo) { create(:todo, created_by: user.id) }
   let!(:items) { create_list(:item, 20, todo_id: todo.id) }

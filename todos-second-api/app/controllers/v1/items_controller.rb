@@ -41,7 +41,11 @@ module V1
     end
 
     def set_todo_item
-      @item = @todo.items.find_by!(id: params[:id]) if @todo
+      @item = @todo.items.find_by!(id: params[:id]) if @todo or not_found
+    end
+
+    def not_found!
+      raise ActionController::ActionNotFound.new("Not Found")
     end
   end
 end

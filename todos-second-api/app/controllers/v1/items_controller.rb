@@ -37,11 +37,11 @@ module V1
     end
 
     def set_todo
-      @todo = Todo.find(params[:todo_id])
+      @todo = Todo.find(params[:todo_id]) or not_found
     end
 
     def set_todo_item
-      @item = @todo.items.find_by!(id: params[:id]) if @todo or not_found
+      @item = @todo.items.find_by!(id: params[:id]) or not_found if @todo
     end
 
     def not_found!

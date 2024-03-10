@@ -34,7 +34,7 @@ class NumbersController < ApplicationController
 
   def number_params
     # whitelist params
-    params.permit(:title, :created_by)
+    params.permit(:float_num, :integer_num)
   end
 
   def set_number

@@ -13,12 +13,12 @@ RSpec.describe Number, type: :model do
     hash_number = Number.new(float_num: { hash: 'hash' }, integer_num: { hash: 'hash' })
     array_number = Number.new(float_num: [123.123], integer_num: [123])
 
-    puts "number: " + "float_num => " + number[:float_num].to_s + ", integer_num => " + number[:integer_num].to_s
-    puts "string_number: " + "float_num => " + string_number[:float_num].to_s + ", integer_num => " + string_number[:integer_num].to_s
-    puts "date_number: " + "float_num => " + date_number[:float_num].to_s + ", integer_num => " + date_number[:integer_num].to_s
-    puts "nil_number: " + "float_num => " + nil_number[:float_num].to_s + ", integer_num => " + nil_number[:integer_num].to_s
-    puts "hash_number: " + "float_num => " + hash_number[:float_num] + ", integer_num => " + hash_number[:integer_num]
-    puts "array_number: " + "float_num => " + array_number[:float_num] + ", integer_num => " + array_number[:integer_num]
+    puts "number => #{number[:float_num].to_s}, integer_num => #{number[:integer_num].to_s}"
+    puts "string_number => #{string_number[:float_num].to_s}, integer_num => #{string_number[:integer_num].to_s}"
+    puts "date_number => #{date_number[:float_num].to_s}, integer_num => #{date_number[:integer_num].to_s}"
+    puts "nil_number => #{nil_number[:float_num].to_s}, integer_num => #{nil_number[:integer_num].to_s}"
+    puts "hash_number => #{hash_number[:float_num]}, integer_num => #{hash_number[:integer_num]}"
+    puts "array_number => #{array_number[:float_num]}, integer_num => #{array_number[:integer_num]}"
   end
 
   it '문자열 실수가 정수 컬럼에 저장된다면?' do

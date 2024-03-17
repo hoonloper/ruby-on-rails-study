@@ -30,14 +30,15 @@ Rails.application.configure do
     # config.cache_store = :null_store
   end
   config.cache_store = :redis_store, {
-    host: "127.0.0.1",
+    host: "localhost",
     port: 6379,
     db: 0,
-    password: "test",
+    password: "",
     namespace: "my_redis"
-  }, {
-    expires_in: 5.minutes
   }
+  # , {
+  #   expires_in: 5.minutes
+  # }
 
   # Store uploaded files on the local file system (see config/storage.yml for options).
   config.active_storage.service = :local

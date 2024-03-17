@@ -7,3 +7,5 @@
 db/seeds.rb,8/1/816631bad3665c05f73dd7befe12c619677d6d62
 R
 "config/environments/development.rb,e/5/e54c3d8d363f5b004526c7fcab8f8eb31da5a209
+S
+#app/controllers/posts_controller.rb,f/9/f996b5876ce8e20a89628ca920dc56b60c229b09

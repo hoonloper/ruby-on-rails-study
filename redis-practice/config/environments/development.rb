@@ -29,13 +29,17 @@ Rails.application.configure do
 
     # config.cache_store = :null_store
   end
-  config.cache_store = :redis_store, {
-    host: "localhost",
-    port: 6379,
-    db: 0,
-    password: "",
-    namespace: "my_redis"
-  }
+
+  config.active_record.cache_versioning = false
+  config.cache_store = :redis_store, "redis://localhost:6379/0/cache"
+  # { expires_in: 90.minutes }
+  # config.cache_store = :redis_store, {
+  #   host: "localhost",
+  #   port: 6379,
+  #   db: 0,
+  #   password: "",
+  #   namespace: "my_redis"
+  # }
   # , {
   #   expires_in: 5.minutes
   # }

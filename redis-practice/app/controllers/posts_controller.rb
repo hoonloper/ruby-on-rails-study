@@ -1,9 +1,12 @@
 class PostsController < ApplicationController
+  include RedisCacheHelper
+
   before_action :set_post, only: %i[ show update destroy ]
 
   # GET /posts
   def index
-    @posts = Post.all
+    # @posts = Post.all
+    @posts = cache_posts_index
 
     render json: @posts
   end

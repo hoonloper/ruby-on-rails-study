@@ -1,11 +1,15 @@
 module RedisCacheHelper
   def cache_posts_index
-    postsData = Post.all
+    puts "call post.all"
+    posts = Post.all
 
-    postsJson = Rails.cache.fetch('posts', expires_in: 7.minutes, race_condition_ttl: 30.seconds) do
-      postsData.to_json
+    # posts_json = Rails.cache.fetch('posts', expires_in: 7.minutes, race_condition_ttl: 30.seconds) do
+    #   posts.to_json
+    # end
+    posts_json = Rails.cache.fetch(Post.cache_post_index, expires_in: 7.minutes, race_condition_ttl: 3) do
+      posts.to_json
     end
 
-    JSON.parse(postsJson)
+    JSON.parse(posts_json)
   end
 end

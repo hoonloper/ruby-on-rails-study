@@ -13,3 +13,7 @@ E
 config/application.rb,7/f/7ff7049c1c8745b54f0a9ef78996f60b38f36268
 Q
 !app/helpers/redis_cache_helper.rb,9/2/92c31d93992c6f009ce93d9fe45949ccc011e15d
+Y
+)app/controllers/application_controller.rb,7/d/7dc0dd94f601e507e2a20bad6adcf12a51caa380
+B
+app/models/post.rb,d/9/d93c4f2b9b37fb2b9ad6808eea1494a6ec09b0c9

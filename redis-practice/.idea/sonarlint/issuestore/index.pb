@@ -17,3 +17,5 @@ Y
 )app/controllers/application_controller.rb,7/d/7dc0dd94f601e507e2a20bad6adcf12a51caa380
 B
 app/models/post.rb,d/9/d93c4f2b9b37fb2b9ad6808eea1494a6ec09b0c9
+P
+ app/models/application_record.rb,a/1/a1167d51039467f42565c78e85fc2e98815cec67

@@ -1,4 +1,6 @@
 class Post < ApplicationRecord
+  validates_presence_of :title, :nickname
+
   def self.cache_post_index
     sql = "SELECT MAX(updated_at) max_updated_time, COUNT(updated_at) total_count FROM (SELECT posts.updated_at FROM posts) E;"
     # latest_data = Post.all.maximum(:updated_at)
